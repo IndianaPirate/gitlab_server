@@ -9,7 +9,7 @@ mkdir ~/docker-gitlab
 export GITLAB_HOME=/srv/gitlab
 
 docker run --detach \
-  --hostname gitlab_server \
+  --hostname gitlab.example.com \
   --publish 443:443 --publish 80:80 --publish 22:22 \
   --name gitlab \
   --restart always \
