@@ -4,8 +4,8 @@
 #	      GITLAB SERVER	           #
 ############################################
 
-sudo mkdir -p /srv/gitlab
-mkdir ~/docker-gitlab
+sudo mkdir -p /srv/gitlab || true
+mkdir ~/docker-gitlab || true
 export GITLAB_HOME=/srv/gitlab
 
 docker run --detach \
